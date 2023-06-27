@@ -1,10 +1,18 @@
-import React from "react";
+import React, { Component } from "react";
 import styles from './User.module.css';
 
-function User(props){
-    return (
-        <li className={styles.user}>{props.name}</li>
-    );
-};
+class User extends Component {
+    render(){
+        return (
+            <li className={styles.user}>{this.props.name}</li>
+        );
+    }
+}
+
+// function User(props){
+//     return (
+//         <li className={styles.user}>{props.name}</li>
+//     );
+// };
 
 export default User;
