@@ -7,7 +7,7 @@ class Users extends Component{
     constructor(){
         super();
         this.state = {
-            showUsers: false
+            showUsers: true
         };
     }
 
