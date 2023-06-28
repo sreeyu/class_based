@@ -19,14 +19,10 @@ class Users extends Component{
 
     render(){
 
-        const DUMMY_USERS = [
-            {id: 'u1', name: 'Shay'},
-            {id: 'u2', name: 'Robin'},
-            {id: 'u3', name: 'Ray'}
-        ];
+        
 
         const userList =   <ul>
-        {DUMMY_USERS.map(user => 
+        {this.props.users.map(user => 
             <User key={user.id} name={user.name} />
             )}
     </ul>

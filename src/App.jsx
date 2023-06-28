@@ -1,11 +1,11 @@
 import React from 'react';
-import Users from './components/userList/Users';
+import UserFinder from './components/userList/UserFinder';
 
 
 function App() {
   return (
     <div >
-      <Users />
+      <UserFinder />
     </div>
   );
 }
