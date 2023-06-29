@@ -1,12 +1,13 @@
 import React from 'react';
+import UsersContext from './components/users-context';
 import UserFinder from './components/userList/UserFinder';
 
 
 function App() {
   return (
-    <div >
+    <UsersContext.Provider >
       <UserFinder />
-    </div>
+    </UsersContext.Provider>
   );
 }
 
